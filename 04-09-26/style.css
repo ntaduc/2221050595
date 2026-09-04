@@ -1,0 +1,27 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }   
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            background-color: blue;
+            text-align: center;
+            align-items: center;
+            font-size: 30px;
+            height: 100px;
+        }
+
+        #tieude-1 {
+            color: green;
+        }
+        
+        .tieude-2 {
+            color: red;
+        }
+        
+        .devweb {
+            color: rgb(238, 144, 152);
+        }

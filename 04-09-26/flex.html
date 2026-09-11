@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các thuộc tính flex</title>
+</head>
+<body>
+    <!-- justify-content -->
+
+    <!-- justify-content để sắp xếp các hạng mục theo chiều ngang và chấp nhận các giá trị sau:
+        flex-start: Các hạng mục sẽ được sắp xếp về phía bên trái của hộp chứa.
+        flex-end: Các hạng mục sẽ được sắp xếp về phía bên phải của hộp chứa.
+        center: Các hạng mục sẽ được sắp xếp ở giữa chính của hộp chứa.
+        space-between: Các hạng mục sẽ được trình bày với khoảng cách bằng nhau giữa chúng.
+        space-around: Các hạng mục sẽ được trình bày với khoảng cách bằng nhau xung quanh chúng.
+     -->
+
+
+    <!-- align-items -->
+
+    <!-- align-items để sắp xếp các hạng mục theo chiều dọc và chấp nhận các giá trị sau:
+        flex-start: Các hạng mục sẽ được sắp xếp về phía trên của hộp chứa.
+        flex-end: Các hạng mục sẽ được sắp xếp về phía dưới của hộp chứa.
+        center: Các hạng mục sẽ được sắp xếp ở giữa chính của hộp chứa.
+        baseline: Các hạng mục sẽ được căn chỉnh theo đường cơ sở của chúng.
+        stretch: Các hạng mục sẽ được kéo dài để chiếm toàn bộ chiều cao của hộp chứa.
+     -->
+
+
+    <!-- flex-direction -->
+
+    <!-- flex-direction để xác định hướng của các hạng mục trong hộp chứa và chấp nhận các giá trị sau:
+        row: Các hạng mục sẽ được sắp xếp theo hàng ngang từ trái sang phải.
+        row-reverse: Các hạng mục sẽ được sắp xếp theo hàng ngang từ phải sang trái.
+        column: Các hạng mục sẽ được sắp xếp theo cột dọc từ trên xuống dưới.
+        column-reverse: Các hạng mục sẽ được sắp xếp theo cột dọc từ dưới lên trên.
+     -->
+
+
+     <!-- Đôi khi đảo chiều của hộp chứa theo hàng ngang hay hàng dọc là không đủ. 
+    Trong những trường hợp này, chúng ta có thể áp dụng thuộc tính order cho từng hạng mục riêng lẻ. 
+    Theo mặc định, các hạng mục có giá trị là 0, nhưng chúng ta có thể thay đổi thuộc tính đó với một giá trị số nguyên dương hoặc âm khác.
+    Sử dụng thuộc tính order để sắp xếp lại những chú ếch theo các lá bông súng của chúng. 
+    -->
+
+    <!-- Một thuộc tính CSS khác mà bạn có thể áp dụng cho các hạng mục riêng biệt là align-self. 
+    Thuộc tính CSS này chấp nhận các giá trị tương tự như align-items và giá trị của nó đối với một hạng mục riêng biệt.
+     -->
+
+
+    <!-- Ồ không! Những chú ếch đều được dồn vào một hàng duy nhất theo các lá bông súng. 
+    Tách rời chúng ra bằng cách sử dụng thuộc tính flex-wrap, thuộc tính này chấp nhận các giá trị sau:
+    nowrap: Mỗi hạng mục được dồn vào một hàng duy nhất.
+    wrap: Các hạng mục quấn xung quanh để tạo thêm dòng.
+    wrap-reverse: Các hạng mục quấn xung quanh để tạo thêm dòng ngược lại. 
+    -->
+
+
+    <!-- Cả hai thuộc tính flex-direction và flex-wrap thường được sử dụng với nhau vì thế từ viết tắt flex-flow được tạo ra để kết hợp chúng. 
+    Từ viết tắt này chấp nhận giá trị của một trong hai thuộc tính ngăn cách bởi một khoảng trắng.
+    Ví dụ, bạn có thể sử dụng flex-flow: row wrap để thiết lập hàng ngang và quấn xung quanh chúng.
+    Thử sử dụng flex-flow để lặp lại cấp độ trước đó. 
+    -->
+
+
+    <!-- Những chú ếch đang lan rộng trên cả ao, nhưng các lá bông súng đang chụm lại ở phía trên. 
+    Bạn có thể dùng align-content để thiết lập cách các dòng có khoảng cách xa nhau như thế nào.
+    Những thuộc tính này có giá trị như sau:
+    flex-start: Các dòng được dồn về phía trên cùng của hộp chứa.   
+    flex-end: Các dòng được dồn về phía dưới cùng của hộp chứa.    
+    center: Các dòng được dồn về trung tâm của hộp chứa.    
+    space-between: Các dòng được trình bày với khoảng cách bằng nhau giữa chúng.    
+    space-around: Các dòng sẽ được trình bày với khoảng cách bằng nhau xung quanh chúng.    
+    stretch: Các dòng sẽ được kéo dài để phù hợp với hộp chứa.  
+    Điều này có thể gây nhầm lẫn, nhưng align-content xác định khoảng cách giữa các dòng, 
+    trong khi align-items xác định cách các hạng mục như một toàn thể được xếp trong hộp chứa. Khi chỉ có một dòng, 
+    align-content không có hiệu lực. 
+    -->
+
+    
+</body>
+</html>
